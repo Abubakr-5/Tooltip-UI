@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tooltip UI</title>
+    <style>
+        .header-option:hover .tooltip {
+            display: inline-flex;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100" style="font-family: 'Roboto', sans-serif;">
+    <header class="w-full my-16 max-w-2xl mx-auto">
+        <nav class="flex bg-white justify-center text-lg items-center p-4">
+            <div class="header-option relative flex flex-col align-middle items-center">
+                <p class="tooltip absolute bottom-8 hidden w-72 p-2 rounded-2xl bg-black text-center text-white">This is the Homepage tooltip</p>
+                <a href="#" class="p-1 mx-2">Home</a>
+            </div>
+            .
+            <div class="header-option relative flex flex-col align-middle items-center text-center">
+                <p class="tooltip absolute bottom-8 hidden w-60 p-2 rounded-2xl bg-black text-center text-white">This is the Projects tooltip</p>
+                <a href="#" class="p-1 mx-2">Projects</a>
+            </div>
+            .
+            <div class="header-option relative flex flex-col align-middle items-center">
+                <p class="tooltip absolute bottom-8 hidden w-60 p-2 rounded-2xl bg-black text-center text-white">This is the Blog tooltip</p>
+                <a href="#" class="p-1 mx-2">Blog</a>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
